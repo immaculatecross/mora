@@ -2,8 +2,28 @@
   "name": "mora",
   "private": true,
   "scripts": {
-    "lint": "echo 'BLOCKED: toolchain not configured (F-000). Replace lint/typecheck/test with real commands.' && exit 1",
-    "typecheck": "echo 'BLOCKED: toolchain not configured (F-000). Replace lint/typecheck/test with real commands.' && exit 1",
-    "test": "echo 'BLOCKED: toolchain not configured (F-000). Replace lint/typecheck/test with real commands.' && exit 1"
+    "dev": "next dev",
+    "build": "next build",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run --coverage"
+  },
+  "dependencies": {
+    "next": "16.2.10",
+    "react": "19.2.7",
+    "react-dom": "19.2.7"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "6.9.1",
+    "@testing-library/react": "16.3.2",
+    "@types/node": "20.19.27",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "@vitest/coverage-v8": "4.1.10",
+    "eslint": "9.39.2",
+    "eslint-config-next": "16.2.10",
+    "jsdom": "26.1.0",
+    "typescript": "5.9.3",
+    "vitest": "4.1.10"
   }
 }
