@@ -29,3 +29,8 @@
 
 **Evidence:** The mechanical coverage ratchet trusted a product-controlled include scope that measured only `page.tsx`, while CI omitted a production build that rewrote tracked TypeScript configuration; isolated review found the resulting green gate misleading.
 **Candidate factory improvement:** Add a scaffold-owned coverage-scope assertion and a production build/idempotence gate. These are candidates, not approved changes.
+
+## L-007 · 2026-07-10 — Pre-merge state went stale after squash merge
+
+**Evidence:** Builder-authored pre-merge `STATE.md` became stale immediately after squash merge, and the copied Mora playbook has no post-merge reconciliation step.
+**Candidate factory improvement:** Add a Foreman-owned post-merge truth check plus scaffold sync. This is a candidate, not an approved product change.

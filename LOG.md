@@ -15,3 +15,7 @@ Recorded the approved Mora definition and backlog, bootstrapped a minimal Next.j
 ## 2026-07-10 — Repaired F-000 review findings
 
 Expanded coverage from one page to all TypeScript product source, tested the root layout's metadata and language semantics, and committed Next's stable generated TypeScript configuration. Verified with all committed gates and two consecutive production builds; the second build left tracked files unchanged. The factory still has no scaffold-owned coverage-scope assertion or build/idempotence gate.
+
+## 2026-07-10 — Pinned the learner settings contract
+
+Recorded D-008 and the version 1 learner settings shape, defaults, validation rules, and ownership boundaries before F-001 distributes the surface across IndexedDB, recording, and analysis. Corrected `STATE.md` to post-merge F-000 truth and captured the missing post-merge reconciliation lesson. Verified with all committed gates and `git diff --check`; no product implementation or feature status changed.
