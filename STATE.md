@@ -2,4 +2,4 @@
 
 > Boot sector: the first read of every fresh session. Regenerated after every merge — keep it one screen.
 
-mora was scaffolded 2026-07-10. No code yet. Next: the Define phase (`ideate`, then `plan`).
+F-000 is built on `feat/000-toolchain`: Mora has an approved product definition, ordered backlog, minimal Next.js 16 page, truthful product-source coverage, and build-stable TypeScript configuration. Next after merge: F-001, shell and settings.
