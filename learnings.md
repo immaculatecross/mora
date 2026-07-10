@@ -24,3 +24,8 @@
 
 **Evidence:** The first F-000 worker crashed after leaving usable uncommitted changes on `feat/000-toolchain`, but mfactory supplied no automatic timeout, heartbeat, or restart mechanism; recovery required a newly assigned worker to inspect the dirty worktree.
 **Candidate factory improvement:** Add worker timeouts and heartbeats plus an automatic restart path that preserves and reports recoverable worktree state. These are candidates, not approved changes.
+
+## L-006 · 2026-07-10 — Green bootstrap gates hid scope and build gaps
+
+**Evidence:** The mechanical coverage ratchet trusted a product-controlled include scope that measured only `page.tsx`, while CI omitted a production build that rewrote tracked TypeScript configuration; isolated review found the resulting green gate misleading.
+**Candidate factory improvement:** Add a scaffold-owned coverage-scope assertion and a production build/idempotence gate. These are candidates, not approved changes.
