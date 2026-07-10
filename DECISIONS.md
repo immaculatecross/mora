@@ -36,3 +36,8 @@ Append-only record of durable decisions (trade-offs decided with Mattia). Format
 
 **Why:** Analysis should not create a server-side archive of learner speech.
 **Consequences:** Do not store recordings server-side; delete the local retry copy after successful analysis.
+
+## D-008 · 2026-07-10 · accepted — Learner settings contract
+
+**Why:** Settings shared by the shell, recorder, and analysis need one pinned surface before implementation.
+**Consequences:** Mora v1 supports English, Italian, Spanish, French, German, and Portuguese. Settings default to native Italian, target English, CEFR B1, and 20 new cards per day. These defaults are onboarding conveniences, not inferred user facts. The exact surface and ownership boundaries are pinned in `CONTRACTS/settings.md`.
